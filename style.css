@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+section.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(254, 253, 253);
+    /* Dark overlay */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Section headings */
+section h2 {
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+}
+.drop-cap::first-letter {
+    font-size: 2.5em;
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    margin-right: 5px;
+    color: rgb(255, 255, 255);
+  }
+  
+
+.me {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(254, 253, 253);
+}
+
+/* Skills Section */
+#skills {
+    background-color: #1c1c1c;
+}
+
+#skills h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#skills h5 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+/* Project cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgb(253, 254, 254);
+}
+
+/* Form Styling */
+form input,
+form textarea {
+    border-radius: 8px;
+}
+
+form button {
+    border-radius: 8px;
+    padding: 10px 25px;
+}
+
+/* Responsive text alignment */
+@media (max-width: 768px) {
+    .text-center-sm {
+        text-align: center;
+    }
+}
+
+.mb-2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(254, 253, 253);
+}
+
+.follow {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+footer a img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer a:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+@media (max-width: 576px) {
+    footer a img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.text-justified {
+    text-align: justify;
+  }
+
